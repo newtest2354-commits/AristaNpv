@@ -3,7 +3,7 @@
 History load error: Expecting value: line 1 column 1 (char 0)
 ============================================================
 NAPSTERNETV FORWARDER
-Started at: 2026-05-28 01:46:30.347979
+Started at: 2026-05-28 02:10:43.438974
 Python version: 3.11.15 (main, Mar  3 2026, 16:10:12) [GCC 13.3.0]
 ============================================================
 
@@ -28,4 +28,4 @@ Fetching: https://t.me/s/ConfigV2rayN
 No direct links found
 
 ✅ Completed! Total sent: 0
-Finished at: 2026-05-28 01:46:49.006024
+Finished at: 2026-05-28 02:11:05.254604
