@@ -23,7 +23,7 @@ env:
 jobs:
   forward-napsternet-files:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 20
 
     steps:
       - name: Checkout repository
@@ -33,7 +33,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Random delay
-        run: sleep $((RANDOM % 180 + 30))
+        run: sleep $((RANDOM % 120 + 20))
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -50,7 +50,7 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
         run: python napsternet_forwarder.py
-        timeout-minutes: 25
+        timeout-minutes: 15
 
       - name: Configure Git
         run: |
@@ -61,6 +61,7 @@ jobs:
         run: |
           git add napsternet_history.json || true
           git add napsternet_files/ || true
+          git add run_log.txt || true
 
       - name: Check for changes
         id: changes
@@ -74,7 +75,7 @@ jobs:
       - name: Commit changes
         if: steps.changes.outputs.changed == 'true'
         run: |
-          git commit -m "📁 NapsternetV update $(date -u '+%Y-%m-%d %H:%M UTC')" || true
+          git commit -m "📁 Napsternet Update $(date -u '+%Y-%m-%d %H:%M UTC')" || true
 
       - name: Pull latest changes
         if: steps.changes.outputs.changed == 'true'
