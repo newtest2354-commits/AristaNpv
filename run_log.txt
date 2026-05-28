@@ -1,31 +1,274 @@
-/home/runner/work/AristaNpv/AristaNpv/napsternet_forwarder.py:113: DeprecationWarning: The 'text' argument to find()-type methods is deprecated. Use 'string' instead.
-  for text_node in soup.find_all(text=True):
+BOT_TOKEN loaded
+CHANNEL_ID: -1002325683219
 History load error: Expecting value: line 1 column 1 (char 0)
 ============================================================
 NAPSTERNETV FORWARDER
-Started at: 2026-05-28 02:10:43.438974
-Python version: 3.11.15 (main, Mar  3 2026, 16:10:12) [GCC 13.3.0]
+2026-05-28 02:12:00.229876
 ============================================================
 
-📡 Processing: https://t.me/s/FreeConfige
-Fetching: https://t.me/s/FreeConfige
-No direct links found
+============================================================
+Processing: https://t.me/s/vasl_bashim
+============================================================
+Extracted 9 file links
+Skipped HTML page: https://t.me/vasl_bashim
+Skipped HTML page: https://t.me/vasl_bashim/15009
+Skipped HTML page: https://t.me/vasl_bashim/15015
+Skipped HTML page: https://t.me/vasl_bashim/15037
+Skipped HTML page: https://t.me/vasl_bashim/15038
+Skipped HTML page: https://t.me/vasl_bashim/15039
+Skipped HTML page: https://t.me/vasl_bashim/15051
+Skipped HTML page: https://t.me/vasl_bashim/15056
+Skipped HTML page: https://t.me/vasl_bashim/15062
+Channel completed: https://t.me/s/vasl_bashim
+Sent count: 0
 
-📡 Processing: https://t.me/s/ServerNett
-Fetching: https://t.me/s/ServerNett
-No direct links found
+============================================================
+Processing: https://t.me/s/Configir98
+============================================================
+Extracted 18 file links
+Skipped HTML page: https://t.me/Configir98
+Skipped HTML page: https://t.me/Configir98/10071
+Skipped HTML page: http://T.me/Configir98
+Skipped HTML page: https://t.me/Configir98/10074
+Skipped HTML page: https://t.me/Configir98/10075
+Skipped HTML page: https://t.me/Configir98/10076
+Skipped HTML page: https://t.me/Configir98/10077
+Skipped HTML page: https://t.me/Configir98/10080
+Skipped HTML page: https://t.me/Configir98/10081
+Skipped HTML page: https://t.me/Configir98/10083
+Skipped HTML page: https://t.me/Configir98/10084
+Skipped HTML page: https://t.me/Configir98/10088
+Skipped HTML page: https://t.me/Configir98/10094
+Skipped HTML page: https://t.me/Configir98/10099
+Skipped HTML page: https://t.me/Configir98/10103
+Skipped HTML page: https://t.me/Configir98/10104
+Skipped HTML page: https://t.me/Configir98/10113
+Skipped HTML page: https://t.me/Configir98/10114
+Channel completed: https://t.me/s/Configir98
+Sent count: 0
 
-📡 Processing: https://t.me/s/ProxyV2ray
-Fetching: https://t.me/s/ProxyV2ray
-No direct links found
+============================================================
+Processing: https://t.me/s/RedLinnez
+============================================================
+Extracted 0 file links
+No files found
 
-📡 Processing: https://t.me/s/NapsternetVConfig
-Fetching: https://t.me/s/NapsternetVConfig
-No direct links found
+============================================================
+Processing: https://t.me/s/amir_webstudio
+============================================================
+Extracted 12 file links
+Skipped HTML page: https://t.me/amir_webstudio
+Skipped HTML page: https://t.me/amir_webstudio/7192
+Skipped HTML page: https://t.me/amir_webstudio/7197
+Skipped HTML page: https://t.me/amir_webstudio/7201
+Skipped HTML page: https://t.me/amir_webstudio/7202
+Skipped HTML page: https://t.me/amir_webstudio/7205
+Skipped HTML page: https://t.me/amir_webstudio/7206
+Skipped HTML page: https://t.me/amir_webstudio/7207
+Skipped HTML page: https://t.me/amir_webstudio/7208
+Skipped HTML page: https://t.me/amir_webstudio/7209
+Skipped HTML page: https://t.me/amir_webstudio/7210
+Skipped HTML page: https://t.me/amir_webstudio/7211
+Channel completed: https://t.me/s/amir_webstudio
+Sent count: 0
 
-📡 Processing: https://t.me/s/ConfigV2rayN
-Fetching: https://t.me/s/ConfigV2rayN
-No direct links found
+============================================================
+Processing: https://t.me/s/nftvici
+============================================================
+Extracted 11 file links
+Skipped HTML page: https://t.me/nftvici
+Skipped HTML page: https://t.me/nftvici/11883
+Skipped HTML page: https://t.me/nftvici/11884
+Skipped HTML page: https://t.me/nftvici/11893
+Skipped HTML page: https://t.me/Nftvici
+Skipped HTML page: https://t.me/nftvici/11895
+Skipped HTML page: https://t.me/nftvici/11896
+Skipped HTML page: https://t.me/nftvici/11898
+Skipped HTML page: https://t.me/nftvici/11899
+Skipped HTML page: https://t.me/nftvici/11905
+Skipped HTML page: https://t.me/nftvici/11916
+Channel completed: https://t.me/s/nftvici
+Sent count: 0
 
-✅ Completed! Total sent: 0
-Finished at: 2026-05-28 02:11:05.254604
+============================================================
+Processing: https://t.me/s/JynMarket
+============================================================
+Extracted 16 file links
+Skipped HTML page: https://t.me/JynMarket
+Skipped HTML page: https://t.me/JynMarket/2391
+Skipped HTML page: https://t.me/JynMarket/1556
+Skipped HTML page: https://t.me/JynServer/8
+Skipped HTML page: https://t.me/JynServer/7
+Skipped HTML page: https://t.me/JynMarket/2400
+Skipped HTML page: https://t.me/JynMarket/2402
+Skipped HTML page: https://t.me/JynMarket/2405
+Skipped HTML page: https://t.me/JynMarket/2408
+Skipped HTML page: https://t.me/JynMarket/2410
+Skipped HTML page: https://t.me/JynMarket/2423
+Skipped HTML page: https://t.me/JynMarket/2425
+Skipped HTML page: https://t.me/JynMarket/2430
+Skipped HTML page: https://t.me/JynMarket/2431
+Skipped HTML page: https://t.me/JynMarket/2433
+Skipped HTML page: https://t.me/JynMarket/2434
+Channel completed: https://t.me/s/JynMarket
+Sent count: 0
+
+============================================================
+Processing: https://t.me/s/ConfigX2ray
+============================================================
+Extracted 16 file links
+Skipped HTML page: https://t.me/ConfigX2ray
+Skipped HTML page: https://t.me/ConfigX2ray/39380
+Skipped HTML page: https://t.me/ConfigX2ray/39382
+Skipped HTML page: https://t.me/ConfigX2ray/39383
+Skipped HTML page: https://t.me/ConfigX2ray/39385
+Skipped HTML page: https://t.me/ConfigX2ray/39386
+Skipped HTML page: https://t.me/ConfigX2ray/39387
+Skipped HTML page: https://t.me/ConfigX2ray/39388
+Skipped HTML page: https://t.me/ConfigX2ray/39390
+Skipped HTML page: https://t.me/ConfigX2ray/39391
+Skipped HTML page: https://t.me/ConfigX2ray/39392
+Skipped HTML page: https://t.me/ConfigX2ray/39393
+Skipped HTML page: https://t.me/ConfigX2ray/39395
+Skipped HTML page: https://t.me/ConfigX2ray/39397
+Skipped HTML page: https://t.me/ConfigX2ray/39398
+Skipped HTML page: https://t.me/ConfigX2ray/39399
+Channel completed: https://t.me/s/ConfigX2ray
+Sent count: 0
+
+============================================================
+Processing: https://t.me/s/ProxyMTProtoIR
+============================================================
+Extracted 11 file links
+Skipped HTML page: https://t.me/proxymtprotoir
+Skipped HTML page: https://t.me/proxymtprotoir/46539
+Skipped HTML page: https://t.me/proxymtprotoir/43010
+Skipped HTML page: https://t.me/ProxyMTProtoIR
+Skipped HTML page: https://t.me/proxymtprotoir/46541
+Skipped HTML page: https://t.me/proxymtprotoir/46542
+Skipped HTML page: https://t.me/proxymtprotoir/46544
+Skipped HTML page: https://t.me/proxymtprotoir/46547
+Skipped HTML page: https://t.me/proxymtprotoir/46546
+Skipped HTML page: https://t.me/proxymtprotoir/46549
+Skipped HTML page: https://t.me/proxymtprotoir/46553
+Channel completed: https://t.me/s/ProxyMTProtoIR
+Sent count: 0
+
+============================================================
+Processing: https://t.me/s/xixv2ray
+============================================================
+Extracted 0 file links
+No files found
+
+============================================================
+Processing: https://t.me/s/JavidanNet
+============================================================
+Extracted 4 file links
+Skipped HTML page: https://t.me/JavidanNet
+Skipped HTML page: https://t.me/JavidanNet/4670
+Skipped HTML page: https://t.me/JavidanNet/4674
+Skipped HTML page: https://t.me/JavidanNet/4676
+Channel completed: https://t.me/s/JavidanNet
+Sent count: 0
+
+============================================================
+Processing: https://t.me/s/ShiftVN
+============================================================
+Extracted 9 file links
+Skipped HTML page: https://t.me/ShiftVN
+Skipped HTML page: https://t.me/ShiftVN/1401
+Skipped HTML page: https://t.me/ShiftVN/1402
+Skipped HTML page: https://t.me/ShiftVN/1404
+Skipped HTML page: https://t.me/ShiftVN/1407
+Skipped HTML page: https://t.me/ShiftVN/1409
+Skipped HTML page: https://t.me/ShiftVN/1412
+Skipped HTML page: https://t.me/ShiftVN/1413
+Skipped HTML page: https://t.me/ShiftVN/1416
+Channel completed: https://t.me/s/ShiftVN
+Sent count: 0
+
+============================================================
+Processing: https://t.me/s/ApolooVpn
+============================================================
+Extracted 6 file links
+Skipped HTML page: https://t.me/ApolooVpn
+Skipped HTML page: https://t.me/ApolooVpn/382
+Skipped HTML page: https://t.me/ApoloVpnbot
+Skipped HTML page: https://t.me/ApolooVpn/383
+Skipped HTML page: https://t.me/ApolooVpn/392
+Skipped HTML page: https://t.me/ApolooVpn/398
+Channel completed: https://t.me/s/ApolooVpn
+Sent count: 0
+
+============================================================
+Processing: https://t.me/s/PathToArrive
+============================================================
+Extracted 11 file links
+Skipped HTML page: https://t.me/PathToArrive
+Skipped HTML page: https://t.me/PathToArrive/973
+Skipped HTML page: https://t.me/PathToArrive/976
+Skipped HTML page: https://t.me/PathToArrive/977
+Download error: https://dl.toolschi.com/view.php?f=43accc69841b6088.zip HTTPSConnectionPool(host='dl.toolschi.com', port=443): Max retries exceeded with url: /view.php?f=43accc69841b6088.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='dl.toolschi.com', port=443) at 0x7f2e187c6090>, 'Connection to dl.toolschi.com timed out. (connect timeout=60)'))
+Skipped HTML page: https://t.me/PathToArrive/979
+Skipped HTML page: https://t.me/PathToArrive/980
+Skipped HTML page: https://t.me/PathToArrive/981
+Skipped HTML page: https://t.me/PathToArrive/982
+Skipped HTML page: https://t.me/PathToArrive/984
+Skipped HTML page: https://t.me/PathToArrive/989
+Channel completed: https://t.me/s/PathToArrive
+Sent count: 0
+
+============================================================
+Processing: https://t.me/s/HTTPinjectorcustom
+============================================================
+Extracted 11 file links
+Skipped HTML page: https://t.me/HTTPinjectorcustom
+Skipped HTML page: https://t.me/HTTPinjectorcustom/27870
+Skipped HTML page: https://t.me/HTTPinjectorcustom/27871?single
+Skipped HTML page: https://t.me/HTTPinjectorcustom/27872?single
+Skipped HTML page: https://t.me/HTTPinjectorcustom/27873?single
+Skipped HTML page: https://t.me/HTTPinjectorcustom/27874?single
+Skipped HTML page: https://t.me/HTTPinjectorcustom/27871
+Skipped HTML page: https://t.me/HTTPinjectorcustom/27885?single
+Skipped HTML page: https://t.me/HTTPinjectorcustom/27886?single
+Skipped HTML page: https://t.me/HTTPinjectorcustom/27885
+Skipped HTML page: https://t.me/HTTPinjectorcustom/27890
+Channel completed: https://t.me/s/HTTPinjectorcustom
+Sent count: 0
+
+============================================================
+Processing: https://t.me/s/hddify
+============================================================
+Extracted 25 file links
+Skipped HTML page: https://t.me/hddify
+Skipped HTML page: https://t.me/hddify/3336
+Skipped HTML page: https://t.me/hddify/1810
+Skipped HTML page: https://t.me/wHiddify/18?single
+Skipped HTML page: https://t.me/Hddify
+Download error: ?q=%23%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF%D8%A2%D8%B2%D8%A7%D8%AF Invalid URL '?q=%23%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF%D8%A2%D8%B2%D8%A7%D8%AF': No scheme supplied. Perhaps you meant https://?q=%23%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF%D8%A2%D8%B2%D8%A7%D8%AF?
+Skipped HTML page: https://t.me/hddify/3337
+Skipped HTML page: https://t.me/hddify/3338
+Skipped HTML page: https://t.me/hddify/3339
+Skipped HTML page: https://t.me/hddify/3340
+Skipped HTML page: https://t.me/hddify/3341
+Skipped HTML page: https://t.me/hddify/3342
+Skipped HTML page: https://t.me/hddify/3343
+Skipped HTML page: https://t.me/hddify/3344
+Skipped HTML page: https://t.me/hddify/3345
+Skipped HTML page: https://t.me/hddify/3346
+Skipped HTML page: https://t.me/hddify/3347
+Skipped HTML page: https://t.me/hddify/3348
+Skipped HTML page: https://t.me/hddify/3349
+Skipped HTML page: https://t.me/hddify/3350
+Skipped HTML page: https://t.me/hddify/3352
+Skipped HTML page: https://t.me/hddify/3353
+Download error: ?q=%23%D8%A7%D8%B1%D8%B3%D8%A7%D9%84%DB%8C Invalid URL '?q=%23%D8%A7%D8%B1%D8%B3%D8%A7%D9%84%DB%8C': No scheme supplied. Perhaps you meant https://?q=%23%D8%A7%D8%B1%D8%B3%D8%A7%D9%84%DB%8C?
+Skipped HTML page: https://t.me/hddify/3355
+Skipped HTML page: https://t.me/hddify/3356
+Channel completed: https://t.me/s/hddify
+Sent count: 0
+
+============================================================
+Completed
+Total sent: 0
+============================================================
