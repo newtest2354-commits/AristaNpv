@@ -2231,3 +2231,394 @@ Sent count: 0
 ============================================================
 TOTAL SENT: 0
 ============================================================
+History load error: Expecting value: line 1 column 1 (char 0)
+============================================================
+NAPSTERNET FORWARDER
+2026-05-28 19:32:31.277160
+============================================================
+============================================================
+Processing: https://t.me/s/vasl_bashim
+============================================================
+Extracted posts: 18
+No download button: https://t.me/vasl_bashim/15080
+No download button: https://t.me/vasl_bashim/15082
+No download button: https://t.me/vasl_bashim/15083
+No download button: https://t.me/vasl_bashim/15084
+No download button: https://t.me/vasl_bashim/15086
+No download button: https://t.me/vasl_bashim/15091
+No download button: https://t.me/vasl_bashim/15093
+No download button: https://t.me/vasl_bashim/15095
+No download button: https://t.me/vasl_bashim/15098
+No download button: https://t.me/vasl_bashim/15099
+No download button: https://t.me/vasl_bashim/15101
+No download button: https://t.me/vasl_bashim/15112
+No download button: https://t.me/vasl_bashim/15116
+No download button: https://t.me/vasl_bashim/15118
+No download button: https://t.me/vasl_bashim/15119
+No download button: https://t.me/vasl_bashim/15122
+No download button: https://t.me/vasl_bashim/15123
+No download button: https://t.me/vasl_bashim/15124
+Completed channel: https://t.me/s/vasl_bashim
+Sent count: 0
+============================================================
+Processing: https://t.me/s/Configir98
+============================================================
+Extracted posts: 20
+No download button: https://t.me/Configir98/10130
+No download button: https://t.me/Configir98/10132
+No download button: https://t.me/Configir98/10133
+No download button: https://t.me/Configir98/10134
+No download button: https://t.me/Configir98/10135
+No download button: https://t.me/Configir98/10136
+No download button: https://t.me/Configir98/10137
+No download button: https://t.me/Configir98/10140
+No download button: https://t.me/Configir98/10142
+No download button: https://t.me/Configir98/10144
+No download button: https://t.me/Configir98/10145
+No download button: https://t.me/Configir98/10146
+No download button: https://t.me/Configir98/10148
+No download button: https://t.me/Configir98/10149
+No download button: https://t.me/Configir98/10151
+No download button: https://t.me/Configir98/10152
+No download button: https://t.me/Configir98/10153
+No download button: https://t.me/Configir98/10154
+No download button: https://t.me/Configir98/10155
+No download button: https://t.me/Configir98/10156
+Completed channel: https://t.me/s/Configir98
+Sent count: 0
+============================================================
+Processing: https://t.me/s/RedLinnez
+============================================================
+Extracted posts: 18
+No download button: https://t.me/RedLinnez/1631
+No download button: https://t.me/RedLinnez/1632
+No download button: https://t.me/RedLinnez/1637
+No download button: https://t.me/RedLinnez/1638
+No download button: https://t.me/RedLinnez/1640
+No download button: https://t.me/RedLinnez/1641
+No download button: https://t.me/RedLinnez/1642
+No download button: https://t.me/RedLinnez/1643
+No download button: https://t.me/RedLinnez/1644
+No download button: https://t.me/RedLinnez/1646
+No download button: https://t.me/RedLinnez/1647
+No download button: https://t.me/RedLinnez/1648
+No download button: https://t.me/RedLinnez/1650
+No download button: https://t.me/RedLinnez/1657
+No download button: https://t.me/RedLinnez/1658
+No download button: https://t.me/RedLinnez/1660
+No download button: https://t.me/RedLinnez/1661
+No download button: https://t.me/RedLinnez/1666
+Completed channel: https://t.me/s/RedLinnez
+Sent count: 0
+============================================================
+Processing: https://t.me/s/amir_webstudio
+============================================================
+Extracted posts: 20
+No download button: https://t.me/amir_webstudio/7215
+No download button: https://t.me/amir_webstudio/7216
+No download button: https://t.me/amir_webstudio/7217
+No download button: https://t.me/amir_webstudio/7218
+No download button: https://t.me/amir_webstudio/7219
+No download button: https://t.me/amir_webstudio/7220
+No download button: https://t.me/amir_webstudio/7221
+No download button: https://t.me/amir_webstudio/7222
+No download button: https://t.me/amir_webstudio/7225
+No download button: https://t.me/amir_webstudio/7226
+No download button: https://t.me/amir_webstudio/7227
+No download button: https://t.me/amir_webstudio/7228
+No download button: https://t.me/amir_webstudio/7229
+No download button: https://t.me/amir_webstudio/7230
+No download button: https://t.me/amir_webstudio/7231
+No download button: https://t.me/amir_webstudio/7232
+No download button: https://t.me/amir_webstudio/7233
+No download button: https://t.me/amir_webstudio/7234
+No download button: https://t.me/amir_webstudio/7235
+No download button: https://t.me/amir_webstudio/7236
+Completed channel: https://t.me/s/amir_webstudio
+Sent count: 0
+============================================================
+Processing: https://t.me/s/nftvici
+============================================================
+Extracted posts: 20
+No download button: https://t.me/nftvici/11920
+No download button: https://t.me/nftvici/11921
+No download button: https://t.me/nftvici/11922
+No download button: https://t.me/nftvici/11923
+No download button: https://t.me/nftvici/11924
+No download button: https://t.me/nftvici/11925
+No download button: https://t.me/nftvici/11926
+No download button: https://t.me/nftvici/11928
+No download button: https://t.me/nftvici/11929
+No download button: https://t.me/nftvici/11932
+No download button: https://t.me/nftvici/11933
+No download button: https://t.me/nftvici/11936
+No download button: https://t.me/nftvici/11938
+No download button: https://t.me/nftvici/11939
+No download button: https://t.me/nftvici/11941
+No download button: https://t.me/nftvici/11943
+No download button: https://t.me/nftvici/11947
+No download button: https://t.me/nftvici/11948
+No download button: https://t.me/nftvici/11952
+No download button: https://t.me/nftvici/11953
+Completed channel: https://t.me/s/nftvici
+Sent count: 0
+============================================================
+Processing: https://t.me/s/JynMarket
+============================================================
+Extracted posts: 20
+No download button: https://t.me/JynMarket/2429
+No download button: https://t.me/JynMarket/2430
+No download button: https://t.me/JynMarket/2431
+No download button: https://t.me/JynMarket/2433
+No download button: https://t.me/JynMarket/2434
+No download button: https://t.me/JynMarket/2435
+No download button: https://t.me/JynMarket/2439
+No download button: https://t.me/JynMarket/2440
+No download button: https://t.me/JynMarket/2443
+No download button: https://t.me/JynMarket/2446
+No download button: https://t.me/JynMarket/2448
+No download button: https://t.me/JynMarket/2449
+No download button: https://t.me/JynMarket/2450
+No download button: https://t.me/JynMarket/2451
+No download button: https://t.me/JynMarket/2453
+No download button: https://t.me/JynMarket/2455
+No download button: https://t.me/JynMarket/2457
+No download button: https://t.me/JynMarket/2458
+No download button: https://t.me/JynMarket/2459
+No download button: https://t.me/JynMarket/2460
+Completed channel: https://t.me/s/JynMarket
+Sent count: 0
+============================================================
+Processing: https://t.me/s/ConfigX2ray
+============================================================
+Extracted posts: 20
+No download button: https://t.me/ConfigX2ray/39393
+No download button: https://t.me/ConfigX2ray/39395
+No download button: https://t.me/ConfigX2ray/39397
+No download button: https://t.me/ConfigX2ray/39398
+No download button: https://t.me/ConfigX2ray/39399
+No download button: https://t.me/ConfigX2ray/39401
+No download button: https://t.me/ConfigX2ray/39402
+No download button: https://t.me/ConfigX2ray/39403
+No download button: https://t.me/ConfigX2ray/39404
+No download button: https://t.me/ConfigX2ray/39405
+No download button: https://t.me/ConfigX2ray/39408
+No download button: https://t.me/ConfigX2ray/39411
+No download button: https://t.me/ConfigX2ray/39412
+No download button: https://t.me/ConfigX2ray/39414
+No download button: https://t.me/ConfigX2ray/39416
+No download button: https://t.me/ConfigX2ray/39417
+No download button: https://t.me/ConfigX2ray/39418
+No download button: https://t.me/ConfigX2ray/39419
+No download button: https://t.me/ConfigX2ray/39421
+No download button: https://t.me/ConfigX2ray/39423
+Completed channel: https://t.me/s/ConfigX2ray
+Sent count: 0
+============================================================
+Processing: https://t.me/s/ProxyMTProtoIR
+============================================================
+Extracted posts: 20
+No download button: https://t.me/proxymtprotoir/46565
+No download button: https://t.me/proxymtprotoir/46567
+No download button: https://t.me/proxymtprotoir/46568
+No download button: https://t.me/proxymtprotoir/46569
+No download button: https://t.me/proxymtprotoir/46570
+No download button: https://t.me/proxymtprotoir/46571
+No download button: https://t.me/proxymtprotoir/46572
+No download button: https://t.me/proxymtprotoir/46573
+No download button: https://t.me/proxymtprotoir/46574
+No download button: https://t.me/proxymtprotoir/46575
+No download button: https://t.me/proxymtprotoir/46576
+No download button: https://t.me/proxymtprotoir/46577
+No download button: https://t.me/proxymtprotoir/46578
+No download button: https://t.me/proxymtprotoir/46579
+No download button: https://t.me/proxymtprotoir/46580
+No download button: https://t.me/proxymtprotoir/46581
+No download button: https://t.me/proxymtprotoir/46582
+No download button: https://t.me/proxymtprotoir/46583
+No download button: https://t.me/proxymtprotoir/46584
+No download button: https://t.me/proxymtprotoir/46585
+Completed channel: https://t.me/s/ProxyMTProtoIR
+Sent count: 0
+============================================================
+Processing: https://t.me/s/xixv2ray
+============================================================
+Extracted posts: 19
+No download button: https://t.me/xixv2ray/6688
+No download button: https://t.me/xixv2ray/6689
+No download button: https://t.me/xixv2ray/6690
+No download button: https://t.me/xixv2ray/6691
+No download button: https://t.me/xixv2ray/6692
+No download button: https://t.me/xixv2ray/6693
+No download button: https://t.me/xixv2ray/6696
+No download button: https://t.me/xixv2ray/6698
+No download button: https://t.me/xixv2ray/6702
+No download button: https://t.me/xixv2ray/6703
+No download button: https://t.me/xixv2ray/6704
+No download button: https://t.me/xixv2ray/6709
+No download button: https://t.me/xixv2ray/6710
+No download button: https://t.me/xixv2ray/6713
+No download button: https://t.me/xixv2ray/6720
+No download button: https://t.me/xixv2ray/6721
+No download button: https://t.me/xixv2ray/6722
+No download button: https://t.me/xixv2ray/6723
+No download button: https://t.me/xixv2ray/6724
+Completed channel: https://t.me/s/xixv2ray
+Sent count: 0
+============================================================
+Processing: https://t.me/s/JavidanNet
+============================================================
+Extracted posts: 20
+No download button: https://t.me/JavidanNet/4755
+No download button: https://t.me/JavidanNet/4757
+No download button: https://t.me/JavidanNet/4758
+No download button: https://t.me/JavidanNet/4759
+No download button: https://t.me/JavidanNet/4761
+No download button: https://t.me/JavidanNet/4762
+No download button: https://t.me/JavidanNet/4763
+No download button: https://t.me/JavidanNet/4764
+No download button: https://t.me/JavidanNet/4765
+No download button: https://t.me/JavidanNet/4766
+No download button: https://t.me/JavidanNet/4767
+No download button: https://t.me/JavidanNet/4768
+No download button: https://t.me/JavidanNet/4769
+No download button: https://t.me/JavidanNet/4770
+No download button: https://t.me/JavidanNet/4771
+No download button: https://t.me/JavidanNet/4772
+No download button: https://t.me/JavidanNet/4773
+No download button: https://t.me/JavidanNet/4774
+No download button: https://t.me/JavidanNet/4775
+No download button: https://t.me/JavidanNet/4776
+Completed channel: https://t.me/s/JavidanNet
+Sent count: 0
+============================================================
+Processing: https://t.me/s/ShiftVN
+============================================================
+Extracted posts: 20
+No download button: https://t.me/ShiftVN/1411
+No download button: https://t.me/ShiftVN/1412
+No download button: https://t.me/ShiftVN/1413
+No download button: https://t.me/ShiftVN/1414
+No download button: https://t.me/ShiftVN/1415
+No download button: https://t.me/ShiftVN/1416
+No download button: https://t.me/ShiftVN/1417
+No download button: https://t.me/ShiftVN/1418
+No download button: https://t.me/ShiftVN/1419
+No download button: https://t.me/ShiftVN/1420
+No download button: https://t.me/ShiftVN/1421
+No download button: https://t.me/ShiftVN/1422
+No download button: https://t.me/ShiftVN/1423
+No download button: https://t.me/ShiftVN/1424
+No download button: https://t.me/ShiftVN/1425
+No download button: https://t.me/ShiftVN/1426
+No download button: https://t.me/ShiftVN/1427
+No download button: https://t.me/ShiftVN/1428
+No download button: https://t.me/ShiftVN/1429
+No download button: https://t.me/ShiftVN/1430
+Completed channel: https://t.me/s/ShiftVN
+Sent count: 0
+============================================================
+Processing: https://t.me/s/ApolooVpn
+============================================================
+Extracted posts: 20
+No download button: https://t.me/ApolooVpn/379
+No download button: https://t.me/ApolooVpn/380
+No download button: https://t.me/ApolooVpn/381
+No download button: https://t.me/ApolooVpn/382
+No download button: https://t.me/ApolooVpn/383
+No download button: https://t.me/ApolooVpn/384
+No download button: https://t.me/ApolooVpn/385
+No download button: https://t.me/ApolooVpn/386
+No download button: https://t.me/ApolooVpn/387
+No download button: https://t.me/ApolooVpn/388
+No download button: https://t.me/ApolooVpn/389
+No download button: https://t.me/ApolooVpn/390
+No download button: https://t.me/ApolooVpn/391
+No download button: https://t.me/ApolooVpn/392
+No download button: https://t.me/ApolooVpn/393
+No download button: https://t.me/ApolooVpn/394
+No download button: https://t.me/ApolooVpn/395
+No download button: https://t.me/ApolooVpn/396
+No download button: https://t.me/ApolooVpn/397
+No download button: https://t.me/ApolooVpn/398
+Completed channel: https://t.me/s/ApolooVpn
+Sent count: 0
+============================================================
+Processing: https://t.me/s/PathToArrive
+============================================================
+Extracted posts: 20
+No download button: https://t.me/PathToArrive/971
+No download button: https://t.me/PathToArrive/972
+No download button: https://t.me/PathToArrive/973
+No download button: https://t.me/PathToArrive/974
+No download button: https://t.me/PathToArrive/975
+No download button: https://t.me/PathToArrive/976
+No download button: https://t.me/PathToArrive/977
+No download button: https://t.me/PathToArrive/978
+No download button: https://t.me/PathToArrive/979
+No download button: https://t.me/PathToArrive/980
+No download button: https://t.me/PathToArrive/981
+No download button: https://t.me/PathToArrive/982
+No download button: https://t.me/PathToArrive/983
+No download button: https://t.me/PathToArrive/984
+No download button: https://t.me/PathToArrive/985
+No download button: https://t.me/PathToArrive/986
+No download button: https://t.me/PathToArrive/987
+No download button: https://t.me/PathToArrive/988
+No download button: https://t.me/PathToArrive/989
+No download button: https://t.me/PathToArrive/991
+Completed channel: https://t.me/s/PathToArrive
+Sent count: 0
+============================================================
+Processing: https://t.me/s/HTTPinjectorcustom
+============================================================
+Extracted posts: 20
+No download button: https://t.me/HTTPinjectorcustom/27898
+No download button: https://t.me/HTTPinjectorcustom/27900
+No download button: https://t.me/HTTPinjectorcustom/27904
+No download button: https://t.me/HTTPinjectorcustom/27905
+No download button: https://t.me/HTTPinjectorcustom/27906
+No download button: https://t.me/HTTPinjectorcustom/27907
+No download button: https://t.me/HTTPinjectorcustom/27908
+No download button: https://t.me/HTTPinjectorcustom/27909
+No download button: https://t.me/HTTPinjectorcustom/27910
+No download button: https://t.me/HTTPinjectorcustom/27911
+No download button: https://t.me/HTTPinjectorcustom/27913
+No download button: https://t.me/HTTPinjectorcustom/27914
+No download button: https://t.me/HTTPinjectorcustom/27915
+No download button: https://t.me/HTTPinjectorcustom/27916
+No download button: https://t.me/HTTPinjectorcustom/27917
+No download button: https://t.me/HTTPinjectorcustom/27918
+No download button: https://t.me/HTTPinjectorcustom/27922
+No download button: https://t.me/HTTPinjectorcustom/27923
+No download button: https://t.me/HTTPinjectorcustom/27924
+No download button: https://t.me/HTTPinjectorcustom/27925
+Completed channel: https://t.me/s/HTTPinjectorcustom
+Sent count: 0
+============================================================
+Processing: https://t.me/s/hddify
+============================================================
+Extracted posts: 18
+No download button: https://t.me/hddify/3356
+No download button: https://t.me/hddify/3357
+No download button: https://t.me/hddify/3358
+No download button: https://t.me/hddify/3359
+No download button: https://t.me/hddify/3360
+No download button: https://t.me/hddify/3361
+No download button: https://t.me/hddify/3362
+No download button: https://t.me/hddify/3363
+No download button: https://t.me/hddify/3364
+No download button: https://t.me/hddify/3365
+No download button: https://t.me/hddify/3366
+No download button: https://t.me/hddify/3367
+No download button: https://t.me/hddify/3370
+No download button: https://t.me/hddify/3371
+No download button: https://t.me/hddify/3372
+No download button: https://t.me/hddify/3375
+No download button: https://t.me/hddify/3376
+No download button: https://t.me/hddify/3377
+Completed channel: https://t.me/s/hddify
+Sent count: 0
+============================================================
+TOTAL SENT: 0
+============================================================
