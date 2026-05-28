@@ -5,15 +5,19 @@ import os
 import time
 import hashlib
 import random
+
 from datetime import datetime
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
+
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHANNEL_ID = os.getenv("CHANNEL_ID")
 
 HISTORY_FILE = "napsternet_history.json"
 FILES_DIR = "napsternet_files"
+LOG_FILE = "run_log.txt"
+
 
 SOURCES = [
     "https://t.me/s/vasl_bashim",
@@ -52,37 +56,60 @@ class NapsternetForwarder:
 
         os.makedirs(FILES_DIR, exist_ok=True)
 
+    def log(self, text):
+
+        print(text)
+
+        with open(LOG_FILE, "a", encoding="utf-8") as f:
+            f.write(text + "\n")
+
     def load_history(self):
 
         if os.path.exists(HISTORY_FILE):
 
             try:
+
                 with open(HISTORY_FILE, "r", encoding="utf-8") as f:
                     return json.load(f)
 
             except Exception as e:
-                print("History load error:", e)
+
+                self.log(f"History load error: {e}")
 
         return {
-            "sent_hashes": []
+            "sent_hashes": [],
+            "sent_urls": []
         }
 
     def save_history(self):
 
         with open(HISTORY_FILE, "w", encoding="utf-8") as f:
-            json.dump(self.history, f, indent=2, ensure_ascii=False)
+            json.dump(
+                self.history,
+                f,
+                indent=2,
+                ensure_ascii=False
+            )
 
-    def is_sent(self, file_hash):
+    def is_sent(self, file_hash, url):
 
-        return file_hash in self.history["sent_hashes"]
+        return (
+            file_hash in self.history["sent_hashes"]
+            or
+            url in self.history["sent_urls"]
+        )
 
-    def mark_sent(self, file_hash):
+    def mark_sent(self, file_hash, url):
 
         if file_hash not in self.history["sent_hashes"]:
 
             self.history["sent_hashes"].append(file_hash)
 
-            self.save_history()
+        if url not in self.history["sent_urls"]:
+
+            self.history["sent_urls"].append(url)
+
+        self.save_history()
 
     def fetch_page(self, url):
 
@@ -96,7 +123,7 @@ class NapsternetForwarder:
 
         except Exception as e:
 
-            print("Fetch error:", url, e)
+            self.log(f"Fetch error: {url} | {e}")
 
             return ""
 
@@ -104,25 +131,33 @@ class NapsternetForwarder:
 
         patterns = [
 
-            r'(?:رمز|Password|پسورد|Pass|PASSWORD|password)[\s:：\-]*([^\s\n]+)',
+            r'(?:رمز|پسورد|گذرواژه)[\s:：\-]*([^\s\n]+)',
+
+            r'(?:password|pass|pwd|key|code)[\s:：\-]*([^\s\n]+)',
+
             r'(?:🔐|🔑)[\s:：\-]*([^\s\n]+)',
-            r'گذرواژه[\s:：\-]*([^\s\n]+)',
-            r'code[\s:：\-]*([^\s\n]+)',
-            r'key[\s:：\-]*([^\s\n]+)'
 
         ]
 
         for pattern in patterns:
 
-            match = re.search(pattern, text, re.IGNORECASE)
+            match = re.search(
+                pattern,
+                text,
+                re.IGNORECASE
+            )
 
             if match:
 
                 password = match.group(1).strip()
 
-                password = re.sub(r'[<>:"/\\|?*]+', '', password)
+                password = re.sub(
+                    r'[<>:"/\\|?*]+',
+                    '',
+                    password
+                )
 
-                if 3 <= len(password) <= 50:
+                if 2 <= len(password) <= 50:
                     return password
 
         return None
@@ -131,72 +166,57 @@ class NapsternetForwarder:
 
         soup = BeautifulSoup(html, "html.parser")
 
-        files = []
+        posts = []
 
-        allowed_exts = [
-            ".npv",
-            ".zip",
-            ".rar",
-            ".7z",
-            ".cfg",
-            ".config"
-        ]
-
-        messages = soup.find_all("div", class_="tgme_widget_message_wrap")
+        messages = soup.find_all(
+            "div",
+            class_="tgme_widget_message_wrap"
+        )
 
         for msg in messages:
 
-            text = msg.get_text(" ", strip=True)
+            try:
 
-            password = self.extract_password(text)
+                text = msg.get_text(
+                    " ",
+                    strip=True
+                )
 
-            for a in msg.find_all("a", href=True):
+                password = self.extract_password(text)
 
-                href = a["href"]
+                post_link = None
 
-                href_lower = href.lower()
+                date_link = msg.find(
+                    "a",
+                    class_="tgme_widget_message_date"
+                )
 
-                found = False
+                if date_link:
+                    post_link = date_link.get("href")
 
-                for ext in allowed_exts:
-
-                    if ext in href_lower or ext in text.lower():
-                        found = True
-                        break
-
-                if "/file/" in href_lower:
-                    found = True
-
-                if not found:
+                if not post_link:
                     continue
 
-                if href.startswith("/"):
-                    href = urljoin("https://t.me", href)
-
-                files.append({
-                    "url": href,
+                posts.append({
+                    "post_url": post_link,
                     "password": password
                 })
 
-        unique = []
+            except Exception as e:
 
-        seen = set()
+                self.log(f"Extract error: {e}")
 
-        for item in files:
+        self.log(f"Extracted posts: {len(posts)}")
 
-            if item["url"] not in seen:
-
-                seen.add(item["url"])
-
-                unique.append(item)
-
-        print(f"Extracted {len(unique)} file links")
-
-        return unique
+        return posts
 
     def sanitize_filename(self, filename):
 
-        filename = re.sub(r'[<>:"/\\|?*]+', '_', filename)
+        filename = re.sub(
+            r'[<>:"/\\|?*]+',
+            '_',
+            filename
+        )
 
         filename = filename.strip()
 
@@ -208,44 +228,100 @@ class NapsternetForwarder:
 
         return filename
 
+    def resolve_download_link(self, post_url):
+
+        try:
+
+            r = self.session.get(
+                post_url,
+                timeout=30
+            )
+
+            r.raise_for_status()
+
+            soup = BeautifulSoup(
+                r.text,
+                "html.parser"
+            )
+
+            download_btn = soup.find(
+                "a",
+                class_="tgme_widget_message_download_button"
+            )
+
+            if download_btn:
+
+                href = download_btn.get("href")
+
+                if href:
+
+                    self.log(f"Resolved: {href}")
+
+                    return href
+
+            document_wrap = soup.find(
+                "a",
+                class_="tgme_widget_message_document_wrap"
+            )
+
+            if document_wrap:
+
+                href = document_wrap.get("href")
+
+                if href:
+
+                    self.log(f"Resolved: {href}")
+
+                    return href
+
+            self.log(f"No download button: {post_url}")
+
+            return None
+
+        except Exception as e:
+
+            self.log(f"Resolve error: {post_url} | {e}")
+
+            return None
+
     def download(self, url):
 
         try:
 
             r = self.session.get(
                 url,
-                timeout=60,
-                allow_redirects=True,
-                stream=True
+                timeout=120,
+                stream=True,
+                allow_redirects=True
             )
 
             r.raise_for_status()
 
-            content_type = r.headers.get("content-type", "")
-
-            if "text/html" in content_type.lower():
-
-                print("Skipped HTML page:", url)
-
-                return None, None, None
-
             filename = None
 
-            cd = r.headers.get("content-disposition", "")
+            cd = r.headers.get(
+                "content-disposition",
+                ""
+            )
 
             if "filename=" in cd:
 
-                filename = cd.split("filename=")[-1]
+                filename = cd.split(
+                    "filename="
+                )[-1]
 
                 filename = filename.strip('"').strip("'")
 
             if not filename:
 
-                filename = url.split("/")[-1].split("?")[0]
+                filename = url.split("/")[-1]
 
             if not filename or "." not in filename:
 
-                filename = hashlib.md5(url.encode()).hexdigest()[:10] + ".npv"
+                filename = (
+                    hashlib.md5(url.encode()).hexdigest()[:10]
+                    + ".npv"
+                )
 
             filename = self.sanitize_filename(filename)
 
@@ -255,13 +331,15 @@ class NapsternetForwarder:
 
                 return None, None, None
 
-            file_hash = hashlib.md5(content).hexdigest()
+            file_hash = hashlib.md5(
+                content
+            ).hexdigest()
 
             return content, filename, file_hash
 
         except Exception as e:
 
-            print("Download error:", url, e)
+            self.log(f"Download error: {url} | {e}")
 
             return None, None, None
 
@@ -269,54 +347,68 @@ class NapsternetForwarder:
 
         try:
 
-            path = os.path.join(FILES_DIR, filename)
+            path = os.path.join(
+                FILES_DIR,
+                filename
+            )
 
             with open(path, "wb") as f:
                 f.write(content)
 
         except Exception as e:
 
-            print("Save error:", e)
+            self.log(f"Save error: {e}")
 
     def send(self, content, filename, password):
 
         try:
 
-            url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendDocument"
+            telegram_url = (
+                f"https://api.telegram.org/bot"
+                f"{BOT_TOKEN}/sendDocument"
+            )
 
-            files = {
-                "document": (filename, content)
-            }
+            password_text = (
+                password
+                if password
+                else "No Password"
+            )
 
-            password_text = password if password else "بدون رمز"
-
-            caption = f"""🔰 NapsternetV File
+            caption = f"""🚀 Napsternet Config
 
 🔐 Password: {password_text}
 
-📥 Download App:
+📲 NapsternetV:
 https://play.google.com/store/apps/details?id=com.napsternetv.napsternetv
 
-@aristapnel"""
+📡 Channel:
+@aristapnel
+"""
+
+            files = {
+                "document": (
+                    filename,
+                    content
+                )
+            }
 
             data = {
                 "chat_id": CHANNEL_ID,
-                "caption": caption[:1000]
+                "caption": caption[:1024]
             }
 
             r = requests.post(
-                url,
+                telegram_url,
                 files=files,
                 data=data,
-                timeout=120
+                timeout=180
             )
 
-            print("Telegram response:", r.status_code)
+            self.log(f"Telegram status: {r.status_code}")
 
             if r.status_code != 200:
 
-                print("Telegram error:")
-                print(r.text)
+                self.log(r.text)
 
                 return False
 
@@ -324,81 +416,101 @@ https://play.google.com/store/apps/details?id=com.napsternetv.napsternetv
 
         except Exception as e:
 
-            print("Send error:", e)
+            self.log(f"Send error: {e}")
 
             return False
 
     def process_channel(self, source):
 
-        print("\n" + "=" * 60)
-        print("Processing:", source)
-        print("=" * 60)
+        self.log("=" * 60)
+        self.log(f"Processing: {source}")
+        self.log("=" * 60)
 
         html = self.fetch_page(source)
 
         if not html:
-
             return 0
 
-        links = self.extract_links(html)
+        posts = self.extract_links(html)
 
-        if not links:
+        if not posts:
 
-            print("No files found")
+            self.log("No posts found")
 
             return 0
 
         count = 0
 
-        for file in links:
+        for post in posts:
 
             try:
 
-                content, filename, file_hash = self.download(file["url"])
+                post_url = post["post_url"]
 
-                if not content:
+                file_url = self.resolve_download_link(
+                    post_url
+                )
 
+                if not file_url:
                     continue
 
-                if self.is_sent(file_hash):
+                content, filename, file_hash = self.download(
+                    file_url
+                )
 
-                    print("Duplicate:", filename)
+                if not content:
+                    continue
+
+                if self.is_sent(
+                    file_hash,
+                    file_url
+                ):
+
+                    self.log(f"Duplicate: {filename}")
 
                     continue
 
                 success = self.send(
                     content,
                     filename,
-                    file["password"]
+                    post["password"]
                 )
 
                 if success:
 
-                    self.save_file(filename, content)
+                    self.save_file(
+                        filename,
+                        content
+                    )
 
-                    self.mark_sent(file_hash)
+                    self.mark_sent(
+                        file_hash,
+                        file_url
+                    )
 
                     count += 1
 
-                    print("Sent:", filename)
+                    self.log(f"Sent: {filename}")
 
-                    time.sleep(random.uniform(5, 12))
+                    time.sleep(
+                        random.uniform(10, 20)
+                    )
 
             except Exception as e:
 
-                print("File process error:", e)
+                self.log(f"Process file error: {e}")
 
-        print("Channel completed:", source)
-        print("Sent count:", count)
+        self.log(f"Completed channel: {source}")
+        self.log(f"Sent count: {count}")
 
         return count
 
     def run(self):
 
-        print("=" * 60)
-        print("NAPSTERNETV FORWARDER")
-        print(datetime.now())
-        print("=" * 60)
+        self.log("=" * 60)
+        self.log("NAPSTERNET FORWARDER")
+        self.log(str(datetime.now()))
+        self.log("=" * 60)
 
         total = 0
 
@@ -408,16 +520,17 @@ https://play.google.com/store/apps/details?id=com.napsternetv.napsternetv
 
                 total += self.process_channel(source)
 
-                time.sleep(random.uniform(2, 6))
+                time.sleep(
+                    random.uniform(3, 8)
+                )
 
             except Exception as e:
 
-                print("Channel error:", source, e)
+                self.log(f"Channel error: {source} | {e}")
 
-        print("\n" + "=" * 60)
-        print("Completed")
-        print("Total sent:", total)
-        print("=" * 60)
+        self.log("=" * 60)
+        self.log(f"TOTAL SENT: {total}")
+        self.log("=" * 60)
 
 
 if __name__ == "__main__":
