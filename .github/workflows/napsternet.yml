@@ -3,9 +3,7 @@ name: NapsternetV File Forwarder
 on:
   schedule:
     - cron: '*/20 * * * *'
-
   workflow_dispatch:
-
   push:
     branches:
       - main
@@ -16,9 +14,6 @@ on:
 
 permissions:
   contents: write
-
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   forward-napsternet-files:
@@ -40,37 +35,54 @@ jobs:
           fi
 
       - name: Random delay
-        run: sleep $((RANDOM % 180 + 30))
+        run: sleep $((RANDOM % 60 + 10))
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r requirements.txt --no-cache-dir
+
+      - name: Create required directories
+        run: |
+          mkdir -p napsternet_files
+          touch napsternet_history.json
 
       - name: Run NapsternetV Forwarder
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
-        run: python napsternet_forwarder.py
+        run: |
+          python napsternet_forwarder.py 2>&1 | tee run_log.txt
         timeout-minutes: 25
+        continue-on-error: false
 
       - name: Configure Git
+        if: success() || failure()
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Stage changes
+        if: success() || failure()
         run: |
-          git add napsternet_history.json
-          git add napsternet_files/ || true
+          git add napsternet_history.json napsternet_files/ run_log.txt -A || true
 
       - name: Check for changes
         id: changes
+        if: success() || failure()
         run: |
           if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
@@ -81,7 +93,7 @@ jobs:
       - name: Commit changes
         if: steps.changes.outputs.changed == 'true'
         run: |
-          git commit -m "📁 NapsternetV update $(date -u '+%Y-%m-%d %H:%M UTC')" || true
+          git commit -m "📁 NapsternetV update $(date -u '+%Y-%m-%d %H:%M UTC')" || echo "No changes to commit"
 
       - name: Pull latest changes
         if: steps.changes.outputs.changed == 'true'
