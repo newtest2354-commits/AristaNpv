@@ -1,0 +1,31 @@
+/home/runner/work/AristaNpv/AristaNpv/napsternet_forwarder.py:113: DeprecationWarning: The 'text' argument to find()-type methods is deprecated. Use 'string' instead.
+  for text_node in soup.find_all(text=True):
+History load error: Expecting value: line 1 column 1 (char 0)
+============================================================
+NAPSTERNETV FORWARDER
+Started at: 2026-05-28 01:46:30.347979
+Python version: 3.11.15 (main, Mar  3 2026, 16:10:12) [GCC 13.3.0]
+============================================================
+
+📡 Processing: https://t.me/s/FreeConfige
+Fetching: https://t.me/s/FreeConfige
+No direct links found
+
+📡 Processing: https://t.me/s/ServerNett
+Fetching: https://t.me/s/ServerNett
+No direct links found
+
+📡 Processing: https://t.me/s/ProxyV2ray
+Fetching: https://t.me/s/ProxyV2ray
+No direct links found
+
+📡 Processing: https://t.me/s/NapsternetVConfig
+Fetching: https://t.me/s/NapsternetVConfig
+No direct links found
+
+📡 Processing: https://t.me/s/ConfigV2rayN
+Fetching: https://t.me/s/ConfigV2rayN
+No direct links found
+
+✅ Completed! Total sent: 0
+Finished at: 2026-05-28 01:46:49.006024
